@@ -1,28 +1,29 @@
-function getDay(d) {
-    let days = [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-    ];
-    if (d < 8) {
-        for (let i = 1; i < days.length; i++) {
-            if(i===d){
-                return days[i-1];
-            }
-        }
-    } else {
-        throw "Invalid Input";
-    }
-}
+//FOR LOOP
 
-try {
-    let dayNum = Number(prompt('Enter The Day Number : '));
-    let day  =  getDay(dayNum);
-    console.log(day)
-} catch (err) {
-    console.log(err);
+// for(let a = 1 ; a<=5 ; a++){
+//     for(let j = 1 ;j<=a ;j++){
+//         document.write('*');
+//     }
+// document.write('<br>')
+// }
+
+
+
+// let obj = {
+// name:'Malik Ahad',
+// age:25,
+// Designation:'ASE',
+// company:'Focusteck'
+// }
+
+// for(let a in obj){
+// if(a === 'age'){
+//     console.log("Age of User :" + obj[a]);
+// }
+// }
+
+
+let arr = [1,2,3,4,5,6,7,8,9];
+for(let a in arr){
+    console.log(arr[a])
 }
