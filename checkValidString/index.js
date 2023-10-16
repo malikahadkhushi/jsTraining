@@ -46,7 +46,9 @@ function checkString(str) {
     }
 }
 
-let check = checkString('()');
+let brackets = prompt('Enter Your Brackets : ')
+
+let check = checkString(brackets);
 
 if (check == true) {
     alert("Valid String");
